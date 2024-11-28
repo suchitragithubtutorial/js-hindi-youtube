@@ -36,3 +36,34 @@ let myObj = {
 const myFunction = function(){
     console.log("hello world")
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*
+Memory 
+-Stack memory(primitive data stored)
+-Heap memory(Non-primitive data stored)
+
+when we store anything in stack memory we get the copy of that
+if we will do any changes further the actual value will never change
+
+if we store anything in heap memory then we do changes in origional value
+
+*/
+
+
+let myYoutubename = "suchitraDashdotcom"
+let anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "suchitra@google.com"
+
+console.log(userOne);
+console.log(userTwo);
